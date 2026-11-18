@@ -14,10 +14,6 @@
 | Destination Cluster | https://kubernetes.default.svc |
 | Namespace | argocd-test |
 
-勾选 Auto-Create Namespace。可以选择 Automatic 同步，或先手动 Sync。
-
-同步后访问 http://35.78.113.31:30880/ 。需要确保 TCP 30880 未被占用且安全组允许访问。
-
 ## 测试更新
 
 修改 chart/values.yaml 的 message 为 `Hello from Argo CD! Version 2`，提交并推送。
